@@ -15,3 +15,5 @@ EC2 instances are grouped together into families. Each EC2 family is designed to
     Memory optimized
     Storage optimized
     GPU optimized
+    
+[Image](https://github.com/learn-with-aws/EC2/blob/master/images/Capture.PNG)
