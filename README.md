@@ -19,3 +19,4 @@ EC2 instances are grouped together into families. Each EC2 family is designed to
 ![image](https://github.com/learn-with-aws/EC2/blob/master/images/Capture.PNG)
 ![image](https://github.com/learn-with-aws/EC2/blob/master/images/ii.PNG)
 ![image](https://github.com/learn-with-aws/EC2/blob/master/images/lo.PNG)
+![image](https://github.com/learn-with-aws/EC2/blob/master/images/ec2.PNG)
