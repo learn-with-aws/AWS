@@ -1,0 +1,37 @@
+  {
+      "variables": {
+            "ami": "ami-026f33d38b6410e30",
+            "aws_region": "ap-south-1"
+      },
+      "builders": [{
+            "type": "amazon-ebs",
+            "region": "{{ user `aws_region` }}",
+            "source_ami": "{{ user `ami` }}",
+            "instance_type": "t2.micro",
+            "ssh_username": "centos",
+            "ami_name": "anand-ami-{{timestamp}}",
+            "ssh_keypair_name": "anand-new-account",
+            "ssh_private_key_file": "anand-new-account.pem",
+            "tags": {
+              "Name":  "anand-ami",
+              "Env": "test"
+            }
+      }
+    ],
+    "provisioners": [{
+            "type": "shell",
+            "script": "httpd.sh"
+        },
+      {
+        "type": "shell",
+        "inline": [
+            "sudo yum install java-1.8* wget unzip git tree -y",
+            "cd /opt/",
+            "sudo wget http://apachemirror.wuchna.com/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip",
+            "sudo unzip apache-maven-3.6.3-bin.zip",
+            "sudo rm -rf apache-maven-3.6.3-bin.zip",
+            "sudo ln -s /opt/apache-maven-3.6.3/bin/maven /usr/bin/maven"
+        ]
+      }
+    ]
+  }
