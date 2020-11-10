@@ -1,0 +1,43 @@
+  {
+      "variables": {
+            "ami": "ami-026f33d38b6410e30",
+            "aws_region": "ap-south-1",
+            "vpc": "vpc-0115adf7791ba2360",
+            "subnet": "subnet-0fa357c86694c1c06",
+            "security_group": "sg-053a11dcd403cde01"
+      },
+      "builders": [{
+            "type": "amazon-ebs",
+            "region": "{{ user `aws_region` }}",
+            "source_ami": "{{ user `ami` }}",
+            "instance_type": "t2.micro",
+            "ssh_username": "centos",
+            "ami_name": "anand-ami-{{timestamp}}",
+            "ssh_keypair_name": "anand-new-account",
+            "ssh_private_key_file": "anand-new-account.pem",
+            "tags": {
+              "Name":  "anand-ami",
+              "Env": "test"
+            },
+            "associate_public_ip_address": "true",
+            "vpc_id": "{{user `vpc`}}",
+            "subnet_id": "{{user `subnet`}}",
+            "security_group_id": "{{user `security_group`}}"
+      }
+    ],
+    "provisioners": [
+      {
+        "type": "shell",
+        "inline": [
+            "sudo yum install git -y",
+            "sudo cd /root && sudo git clone https://github.com/learn-with-devops/flask-application.git  /root/flask-application",
+            "sudo cd /root/flask-application && sudo chmod +x /root/flask-application/deployment.sh",
+            "sudo sh /root/flask-application/deployment.sh"
+        ]
+      },
+      {
+        "type": "shell",
+        "inline": ["sleep 300"]
+      }
+    ]
+  }
