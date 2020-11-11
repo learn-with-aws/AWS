@@ -6,9 +6,9 @@
 
 - terraform plan  --> for running as dry run mode
 
-        terraform plan -out output.tf   --> you can store the plan in one file and use that file for launching the servers|VPC etc
+        terraform plan -out output.terraform   --> you can store the plan in one file and use that file for launching the servers|VPC etc
 
-        terraform apply output.tf 
+        terraform apply output.terraform
     
 - terraform apply  --> for creating the resources
 
