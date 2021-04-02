@@ -72,3 +72,7 @@
 
      aws s3 sync /c/Users/Anand_Reddy/Desktop/website s3://use-s3-gateway-prd
      
+
+### Configures a bucket named “my-bucket” as a static website
+
+    aws s3 website s3://my-bucket/ --index-document index.html --error-document error.html
