@@ -66,3 +66,9 @@
     aws s3 rm s3://gaurav-test-today --recursive --exclude “*.jpg”
 
     
+### SYNC the files
+
+ - Sync from local to a bucket
+
+     aws s3 sync /c/Users/Anand_Reddy/Desktop/website s3://use-s3-gateway-prd
+     
