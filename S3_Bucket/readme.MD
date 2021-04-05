@@ -1,3 +1,9 @@
+## Encryption types and differences
+
+    - SSE-S3 is the simplest method – the keys are managed and handled by AWS to encrypt the data you have selected. You cannot see the key directly or use this key manually to encrypt or decrypt the data. AES-256 is used as the encryption algorithm. AES (Advanced Encryption Standard) is a symmetric block cypher, with 256 bit being the cryptographic key length. If you fully trust AWS, use this S3 encryption method.
+
+    - SSE-KMS is a slightly different method from SSE-S3. AWS Key Management Service (KMS) is used to encrypt S3 data on the Amazon server side. The data key is managed by AWS, but a user manages the customer master key (CMK) in AWS KMS. The advantages of using the SSE-KMS encryption type are user control and audit trail.
+
 ## AWS Storage Types
 
     Amazon Simple Storage Service (Amazon S3)
