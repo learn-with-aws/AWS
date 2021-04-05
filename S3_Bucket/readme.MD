@@ -91,3 +91,26 @@
 ### Configures a bucket named “my-bucket” as a static website
 
     aws s3 website s3://my-bucket/ --index-document index.html --error-document error.html
+    
+    
+    
+----------------------------------------------------------------------------------------------------------------------------------
+
+## S3 Life Cycle Management
+
+Cycle :
+
+    S3 Standard storage class ( 30 days min to store here ) -> S3 Standard-IA -> S3 Intelligent-Tiering or S3 One Zone-IA -> S3 Glacier storage class (after 90 days files we can move to glacier ) -> S3 Glacier Deep Archive storage class ( 180 days ) -> Permanent Delete
+
+Supported lifecycle transitions
+
+    S3 Standard storage class –> other storage class.
+    Any storage class –> S3 Glacier or S3 Glacier Deep Archive storage classes.
+    S3 Standard-IA –> S3 Intelligent-Tiering or S3 One Zone-IA
+    S3 Intelligent-Tiering storage class –> S3 One Zone-IA storage class.
+    S3 Glacier storage class –> S3 Glacier Deep Archive storage class
+    
+Expiration Days ( Standards ): 
+
+    
+
