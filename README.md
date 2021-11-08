@@ -14,3 +14,13 @@ We want to allow a user whos IAM account there in AWS-Stage account to access th
 ### VPC flow Logs ?
 
 VPC Flow Logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in your VPC. Flow log data can be published to Amazon CloudWatch Logs or Amazon S3. After you've created a flow log, you can retrieve and view its data in the chosen destination.
+
+
+### Multiple Ip addresses ?
+
+It can be useful to assign multiple IP addresses to an instance in your VPC to do the following:
+
+    - Host multiple websites on a single server by using multiple SSL certificates on a single server and associating each certificate with a specific IP address.
+    - Operate network appliances, such as firewalls or load balancers, that have multiple IP addresses for each network interface. 
+    - Redirect internal traffic to a standby instance in case your instance fails, by reassigning the secondary IP address to the standby instance.
+
