@@ -30,10 +30,12 @@ It can be useful to assign multiple IP addresses to an instance in your VPC to d
 - Load Balancing and It types ??
 - Auto Scaling ??
 - EC2 types ??
+- Code Build & Code Pipeline & Code Deploy ??
 - ECR & ECS ??
 - VPC ??
 - EBS ??
 - Lambda ??
 - RDS ??
-- 
+- Cloud Front ??
+- Terraform ??
 
