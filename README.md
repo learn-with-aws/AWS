@@ -24,3 +24,16 @@ It can be useful to assign multiple IP addresses to an instance in your VPC to d
     - Operate network appliances, such as firewalls or load balancers, that have multiple IP addresses for each network interface. 
     - Redirect internal traffic to a standby instance in case your instance fails, by reassigning the secondary IP address to the standby instance.
 
+### Launch Template Vs Launch Configuration ? 
+
+## Topics to learn
+- Load Balancing and It types ??
+- Auto Scaling ??
+- EC2 types ??
+- ECR & ECS ??
+- VPC ??
+- EBS ??
+- Lambda ??
+- RDS ??
+- 
+
