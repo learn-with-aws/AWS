@@ -1,3 +1,7 @@
+## Max size of S3 object ??
+
+   5TB is Max, bux it will allow 5GB per once as part of multipart upload.
+
 ## Encryption types and differences
 
     - SSE-S3 is the simplest method – the keys are managed and handled by AWS to encrypt the data you have selected. You cannot see the key directly or use this key manually to encrypt or decrypt the data. AES-256 is used as the encryption algorithm. AES (Advanced Encryption Standard) is a symmetric block cypher, with 256 bit being the cryptographic key length. If you fully trust AWS, use this S3 encryption method.
