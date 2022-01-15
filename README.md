@@ -42,3 +42,7 @@ It can be useful to assign multiple IP addresses to an instance in your VPC to d
 ### Security Group Vs NACL
 Screenshot 2022-01-15 at 5.09.44 PM<img width="1133" alt="image" src="https://user-images.githubusercontent.com/51190838/149620846-8e6a7ef2-8167-47a9-9008-fcea8f17bf15.png">
 
+
+### VPC peering
+Screenshot 2022-01-15 at 7.48.35 PM<img width="1641" alt="image" src="https://user-images.githubusercontent.com/51190838/149624934-87a2ecc3-f419-45b0-81dc-58ec01303074.png">
+
