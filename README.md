@@ -39,3 +39,6 @@ It can be useful to assign multiple IP addresses to an instance in your VPC to d
 - Cloud Front ??
 - Terraform ??
 
+### Security Group Vs NACL
+Screenshot 2022-01-15 at 5.09.44 PM<img width="1133" alt="image" src="https://user-images.githubusercontent.com/51190838/149620846-8e6a7ef2-8167-47a9-9008-fcea8f17bf15.png">
+
