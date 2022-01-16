@@ -52,13 +52,17 @@ Screenshot 2022-01-16 at 8.47.20 AM<img width="1547" alt="image" src="https://us
 ### Launch Configuration Vs Launch Template
 
 
-      Launch template is similar to launch configuration which usually Auto Scaling group uses to launch EC2 instances. However, defining a launch template instead of a launch configuration allows you to have multiple versions of a template.
+     -  Launch template is similar to launch configuration which usually Auto Scaling group uses to launch EC2 instances. 
+      However, defining a launch template instead of a launch configuration allows you to have multiple versions of a template.
 
-      AWS recommend that we should use launch templates instead of launch configurations to ensure that we can leverage the latest features of Amazon EC2, such as T2 Unlimited instances.
+     - AWS recommend that we should use launch templates instead of launch configurations to ensure that we can leverage 
+      the latest features of Amazon EC2, such as T2 Unlimited instances.
 
-      launch configurations are used with Auto Scaling Groups. While launch templates are used when you launch an instance using the aws EC2 console, an AWS SDK, or a command line tool.
+     - launch configurations are used with Auto Scaling Groups. While launch templates are used when you launch an instance 
+       using the aws EC2 console, an AWS SDK, or a command line tool.
 
-      Launch templates enable you to store the parameters (AMI, instance type, security groups, and key pairs etc.) so that you do not need to define these parameters every time you launch a new instance.
+     - Launch templates enable you to store the parameters (AMI, instance type, security groups, and key pairs etc.) 
+       so that you do not need to define these parameters every time you launch a new instance.
       
 ![image](https://user-images.githubusercontent.com/51190838/149654503-a24893db-7836-4837-a7c2-861f344d88f3.png)
 
