@@ -46,3 +46,5 @@ Screenshot 2022-01-15 at 5.09.44 PM<img width="1133" alt="image" src="https://us
 ### VPC peering
 Screenshot 2022-01-15 at 7.48.35 PM<img width="1641" alt="image" src="https://user-images.githubusercontent.com/51190838/149624934-87a2ecc3-f419-45b0-81dc-58ec01303074.png">
 
+### ALB 
+Screenshot 2022-01-16 at 8.47.20 AM<img width="1547" alt="image" src="https://user-images.githubusercontent.com/51190838/149646091-4f831cad-91fc-4a3f-8b4e-c3325fefb696.png">
