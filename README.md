@@ -48,3 +48,27 @@ Screenshot 2022-01-15 at 7.48.35 PM<img width="1641" alt="image" src="https://us
 
 ### ALB 
 Screenshot 2022-01-16 at 8.47.20 AM<img width="1547" alt="image" src="https://user-images.githubusercontent.com/51190838/149646091-4f831cad-91fc-4a3f-8b4e-c3325fefb696.png">
+
+### Launch Configuration Vs Launch Template
+
+
+      Launch template is similar to launch configuration which usually Auto Scaling group uses to launch EC2 instances. However, defining a launch template instead of a launch configuration allows you to have multiple versions of a template.
+
+      AWS recommend that we should use launch templates instead of launch configurations to ensure that we can leverage the latest features of Amazon EC2, such as T2 Unlimited instances.
+
+      launch configurations are used with Auto Scaling Groups. While launch templates are used when you launch an instance using the aws EC2 console, an AWS SDK, or a command line tool.
+
+      Launch templates enable you to store the parameters (AMI, instance type, security groups, and key pairs etc.) so that you do not need to define these parameters every time you launch a new instance.
+      
+      Launch Configuration	Launch Template
+It don't allow multiple versions of templates and not able to modify once its created.	It allows you to have multiple versions of a template.
+It is used with Auto Scaling Groups.	when you launch an instance using the aws EC2 console, an AWS SDK, or a command line tool.
+It won't store the parameters.	Launch templates enable you to store the parameters (AMI, instance type, security groups, and key pairs etc.) so that you do not need to define these parameters every time you launch a new instance.
+Must be recreated every time because modification is not 	1. Allows to edit and update.
+	2. Maintains versions.
+	3. Can use T2 unlimited burst feature.
+	4. Allow provisioning using both On-demand and Spot Instances.
+	5. Creation of parameter subsets.(Partial configuration for reuse and inheritance)
+	6. Can also be used to launch a standalone instance using AWS Console, SDK and CLI.
+![image](https://user-images.githubusercontent.com/51190838/149654503-a24893db-7836-4837-a7c2-861f344d88f3.png)
+
