@@ -8,6 +8,8 @@
 
     - SSE-KMS is a slightly different method from SSE-S3. AWS Key Management Service (KMS) is used to encrypt S3 data on the Amazon server side. The data key is managed by AWS, but a user manages the customer master key (CMK) in AWS KMS. The advantages of using the SSE-KMS encryption type are user control and audit trail.
 
+    - SSE-C  customer-provided encryption keys  --> You may use your own encryption keys in order to encrypt data on Amazon S3. In this case Amazon S3 only encrypts and decrypts files and you manage the keys.
+
 ## AWS Storage Types
 
     Amazon Simple Storage Service (Amazon S3)
