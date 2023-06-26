@@ -83,9 +83,9 @@ Note : aws.SourceIp works only for Public IP address.
 - Bucket Versioning
 - Default encryption : Amazon S3 managed keys (SSE-S3)
 - Server access logging
-- AWS CloudTrail data events (Configure CloudTrail data events to log Amazon S3 object-level API operations in the CloudTrail console.)
-- Event notifications (Send a notification when specific events occur in your bucket.)
-- Transfer acceleration (Use an accelerated endpoint for faster data transfers.)
-- Static website hosting ( Use this bucket to host a website or redirect requests.)
-- Object Lock (Store objects using a write-once-read-many (WORM) model to help you prevent objects from being deleted or overwritten for a fixed amount of time or indefinitely.)
+- AWS CloudTrail data events : (Configure CloudTrail data events to log Amazon S3 object-level API operations in the CloudTrail console.)
+- Event notifications : (Send a notification when specific events occur in your bucket.)
+- Transfer acceleration : (Use an accelerated endpoint for faster data transfers.)
+- Static website hosting : ( Use this bucket to host a website or redirect requests.)
+- Object Lock : (Store objects using a write-once-read-many (WORM) model to help you prevent objects from being deleted or overwritten for a fixed amount of time or indefinitely.)
 
