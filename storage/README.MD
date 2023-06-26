@@ -15,7 +15,6 @@
 
 
 ## AWS S3
-
 Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance.
 
   - Durability:  S3 provides 99.999999999 percent durability.
@@ -32,3 +31,27 @@ Amazon Simple Storage Service (Amazon S3) is an object storage service offering 
   2. <b>Not able to change Name and Region</b> : When you create a bucket, you choose its name and the AWS Region to create it in. After you create a bucket, you can't change its name or Region.
   3. <b>We can create Max 100 buckets</b> :  By default, you can create up to 100 buckets in each of your AWS accounts. If you need additional buckets, you can increase your account bucket limit to a maximum of 1,000 buckets by submitting a service limit increase
   4. <b>Max 5TB object storage and 5GB as a single part upload</b> : Individual Amazon S3 objects can range in size from a minimum of 0 bytes to a maximum of 5 terabytes. The largest object that can be uploaded in a single PUT is 5 gigabytes. For objects larger than 100 megabytes, customers should consider using the Multipart Upload capability.
+
+### Scenarios : 
+<b>1. Create a S3 policy to give access to specific CIDR range and restrict one IP out of it.</b>
+
+
+<b>2. Make S3 bucket Public with S3 Policy</b>
+
+- First, Disable "Block public access" in permissions.
+- Gernerate a Bucket policy from policy generator 
+              {
+                "Id": "Policy1687754937482",
+                "Version": "2012-10-17",
+                "Statement": [
+                  {
+                    "Sid": "Stmt1687754934648",
+                    "Action": [
+                      "s3:GetObject"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:s3:::hpc-dev-1/*",
+                    "Principal": "*"
+                  }
+                ]
+              }
