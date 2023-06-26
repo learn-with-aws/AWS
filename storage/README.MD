@@ -24,4 +24,11 @@ Amazon Simple Storage Service (Amazon S3) is an object storage service offering 
   - Availability: S3 offers 99.99 percent availability of objects
   - Security: S3 offers an impressive range of access management tools and encryption features that provide top-notch security.
   - Flexibility: S3 is ideal for a wide range of uses like data storage, data backup, software delivery, data archiving, disaster recovery, website hosting, mobile applications, IoT devices, and much more.
-  - Simple data transfer: You don’t have to be an IT genius to execute data transfers on S3. The service revolves around simplicity and ease of use
+  - Simple data transfer: You don’t have to be an IT genius to execute data transfers on S3. The service revolves around simplicity and ease of use.
+
+### S3 Limitations
+
+  1. An Amazon S3 bucket is owned by the AWS account that created it. Bucket ownership is not transferable to another account.
+  2. When you create a bucket, you choose its name and the AWS Region to create it in. After you create a bucket, you can't change its name or Region.
+  3. By default, you can create up to 100 buckets in each of your AWS accounts. If you need additional buckets, you can increase your account bucket limit to a maximum of 1,000 buckets by submitting a service limit increase
+  4. Individual Amazon S3 objects can range in size from a minimum of 0 bytes to a maximum of 5 terabytes. The largest object that can be uploaded in a single PUT is 5 gigabytes. For objects larger than 100 megabytes, customers should consider using the Multipart Upload capability.
