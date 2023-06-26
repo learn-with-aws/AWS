@@ -28,7 +28,7 @@ Amazon Simple Storage Service (Amazon S3) is an object storage service offering 
 
 ### S3 Limitations
 
-  1. An Amazon S3 bucket is owned by the AWS account that created it. Bucket ownership is not transferable to another account.
-  2. When you create a bucket, you choose its name and the AWS Region to create it in. After you create a bucket, you can't change its name or Region.
-  3. By default, you can create up to 100 buckets in each of your AWS accounts. If you need additional buckets, you can increase your account bucket limit to a maximum of 1,000 buckets by submitting a service limit increase
-  4. Individual Amazon S3 objects can range in size from a minimum of 0 bytes to a maximum of 5 terabytes. The largest object that can be uploaded in a single PUT is 5 gigabytes. For objects larger than 100 megabytes, customers should consider using the Multipart Upload capability.
+  1. <b>Cannot change Bucket ownership</b> : An Amazon S3 bucket is owned by the AWS account that created it. Bucket ownership is not transferable to another account.
+  2. Not able to change Name and Region : When you create a bucket, you choose its name and the AWS Region to create it in. After you create a bucket, you can't change its name or Region.
+  3. We can create Max 100 buckets :  By default, you can create up to 100 buckets in each of your AWS accounts. If you need additional buckets, you can increase your account bucket limit to a maximum of 1,000 buckets by submitting a service limit increase
+  4. Max 5TB object storage and 5GB as a single part upload : Individual Amazon S3 objects can range in size from a minimum of 0 bytes to a maximum of 5 terabytes. The largest object that can be uploaded in a single PUT is 5 gigabytes. For objects larger than 100 megabytes, customers should consider using the Multipart Upload capability.
