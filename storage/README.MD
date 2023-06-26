@@ -33,27 +33,59 @@ Amazon Simple Storage Service (Amazon S3) is an object storage service offering 
   4. <b>Max 5TB object storage and 5GB as a single part upload</b> : Individual Amazon S3 objects can range in size from a minimum of 0 bytes to a maximum of 5 terabytes. The largest object that can be uploaded in a single PUT is 5 gigabytes. For objects larger than 100 megabytes, customers should consider using the Multipart Upload capability.
 
 ### Scenarios : 
-<b>1. Create a S3 policy to give access to specific CIDR range and restrict one IP out of it.</b>
-
-
-<b>2. Make S3 bucket Public with S3 Policy</b>
+<b>1. Make S3 bucket Public with S3 Policy</b>
 
 - First, Disable "Block public access" in permissions.
 - Gernerate a Bucket policy from policy generator 
 ```
               {
-                "Id": "Policy1687754937482",
                 "Version": "2012-10-17",
                 "Statement": [
                   {
-                    "Sid": "Stmt1687754934648",
+                    "Principal": "*"
                     "Action": [
                       "s3:GetObject"
                     ],
                     "Effect": "Allow",
                     "Resource": "arn:aws:s3:::hpc-dev-1/*",
-                    "Principal": "*"
                   }
                 ]
               }
 ```
+
+<b>2. Create a S3 Bucket policy to give access to specific CIDR range and restrict one IP out of it.</b>
+```
+              {
+                "Version": "2012-10-17",
+                "Statement": [
+                  {
+                    "Action": "s3:*",
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:s3:::hpc-dev-1/*",
+                    "Principal": "*",
+                    "Condition": {
+                      "IpAddress": {
+                        "aws:SourceIP": "3.67.1.198/32"
+                      },
+                      "NotIpAddress": {
+                        "aws:SourceIP": "3.67.201.198/32"
+                      }
+                    }
+                  }
+                ]
+              }
+```
+Note : aws.SourceIp works only for Public IP address.
+
+
+### S3 Properties
+
+- Bucket Versioning
+- Default encryption : Amazon S3 managed keys (SSE-S3)
+- Server access logging
+- AWS CloudTrail data events (Configure CloudTrail data events to log Amazon S3 object-level API operations in the CloudTrail console.)
+- Event notifications (Send a notification when specific events occur in your bucket.)
+- Transfer acceleration (Use an accelerated endpoint for faster data transfers.)
+- Static website hosting ( Use this bucket to host a website or redirect requests.)
+- Object Lock (Store objects using a write-once-read-many (WORM) model to help you prevent objects from being deleted or overwritten for a fixed amount of time or indefinitely.)
+
