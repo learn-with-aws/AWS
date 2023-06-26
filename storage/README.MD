@@ -40,6 +40,7 @@ Amazon Simple Storage Service (Amazon S3) is an object storage service offering 
 
 - First, Disable "Block public access" in permissions.
 - Gernerate a Bucket policy from policy generator 
+```
               {
                 "Id": "Policy1687754937482",
                 "Version": "2012-10-17",
@@ -55,3 +56,4 @@ Amazon Simple Storage Service (Amazon S3) is an object storage service offering 
                   }
                 ]
               }
+```
