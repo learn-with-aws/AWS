@@ -24,4 +24,4 @@ Amazon Simple Storage Service (Amazon S3) is an object storage service offering 
   - Availability: S3 offers 99.99 percent availability of objects
   - Security: S3 offers an impressive range of access management tools and encryption features that provide top-notch security.
   - Flexibility: S3 is ideal for a wide range of uses like data storage, data backup, software delivery, data archiving, disaster recovery, website hosting, mobile applications, IoT devices, and much more.
-  - Simple data transfer: You don’t have to be an IT genius to execute data transfers on S3. The service revolves around simplicity and ease of use.
+  - Simple data transfer: You don’t have to be an IT genius to execute data transfers on S3. The service revolves around simplicity and ease of use
