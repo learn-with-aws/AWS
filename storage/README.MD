@@ -7,7 +7,11 @@
 4. EBS -> Block storage
 5. AWS Backup -> AWS backup centrally Manages and automates backup across AWS services. 
 6. Storage Gateway -> Hybrid storage integration
-7. AWS Elastic Disaster Recovery -> Scalable, cost-effective application recovery to AWS 
-8. FSx -> Fully managed third-party file systems optimised for a varity of workloads
+7. AWS RDS -> DataBase Storage 
+8. AWS Snowball
+9. AWS CloudFront
+10. AWS Elastic Disaster Recovery -> Scalable, cost-effective application recovery to AWS 
+11. FSx -> Fully managed third-party file systems optimised for a varity of workloads
+
 
 ## AWS S3
