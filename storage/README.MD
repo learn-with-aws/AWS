@@ -8,10 +8,20 @@
 5. AWS Backup -> AWS backup centrally Manages and automates backup across AWS services. 
 6. Storage Gateway -> Hybrid storage integration
 7. AWS RDS -> DataBase Storage 
-8. AWS Snowball
+8. AWS Snowball, Sonwball Edge, Snow Mobile
 9. AWS CloudFront
 10. AWS Elastic Disaster Recovery -> Scalable, cost-effective application recovery to AWS 
 11. FSx -> Fully managed third-party file systems optimised for a varity of workloads
 
 
 ## AWS S3
+
+Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance.
+
+  - Durability:  S3 provides 99.999999999 percent durability.
+  - Low cost: S3 lets you store data in a range of “storage classes.” These classes are based on the frequency and immediacy you require in accessing files. 
+  - Scalability: S3 charges you only for what resources you actually use, and there are no hidden fees or overage charges. You can scale your storage resources to easily meet your organization’s ever-changing demands.
+  - Availability: S3 offers 99.99 percent availability of objects
+  - Security: S3 offers an impressive range of access management tools and encryption features that provide top-notch security.
+  - Flexibility: S3 is ideal for a wide range of uses like data storage, data backup, software delivery, data archiving, disaster recovery, website hosting, mobile applications, IoT devices, and much more.
+  - Simple data transfer: You don’t have to be an IT genius to execute data transfers on S3. The service revolves around simplicity and ease of use.
